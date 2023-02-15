@@ -25,4 +25,9 @@ let ``should be empty if passed an empty list`` () =
 [<Test>]
 let ``should contain value passed to it`` () =
     let set = Set (Some ["Hello"; "world"])
-    Assert.IsTrue(set.contains("Hello"))
+    Assert.IsTrue(set.contains "Hello")
+
+[<Test>]
+let ``should not contain a value that is not passed`` () =
+    let set = Set (Some ["Hello"; "world"])
+    Assert.IsFalse(set.contains "Bob")

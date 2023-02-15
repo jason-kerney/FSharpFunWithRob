@@ -7,4 +7,10 @@ type Set (values: (_ list) option) =
         | Some [] -> true
         | _ -> false
 
-    member _.contains _ = true
+    member _.contains candidate = 
+        match values with
+        | None
+        | Some [] -> false
+        | Some values ->
+            values
+            |> List.contains candidate
