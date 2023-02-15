@@ -39,4 +39,10 @@ let ``should throw exception if given null in set`` () =
     with _ ->
         ()
     
-
+[<Test>]
+let ``should throw exception if given empty string in set`` () =
+    try
+        Set (Some ["Hello"; ""; "world"]) |> ignore
+        Assert.Fail "Should not get here if you throw exceptions"
+    with _ ->
+        ()    
