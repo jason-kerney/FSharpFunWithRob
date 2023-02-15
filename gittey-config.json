@@ -21,7 +21,22 @@
         }
     },
     "verboseMode": false,
-    "aliases": [],
+    "aliases": [
+        {
+            "name": "test",
+            "command": "dotnet test && gittey push",
+            "description": "Runs tests and on success commits and pushes."
+        },
+        {
+            "name": "undo",
+            "command": "git checkout . && git clean -xfd && dotnet restore",
+            "description": "resets branch to previous checkout state and cleans all previous builds"
+        },
+        {
+            "name": "push",
+            "command": "gittey commit && git push"
+        }
+    ],
     "collaborators": [
         "AgileInstitute"
     ]
