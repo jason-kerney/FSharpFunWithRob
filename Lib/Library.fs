@@ -1,16 +1,16 @@
 ﻿namespace SetArithmetic.Lib
 
 type Set (values: (_ list) option) =
-    member _.IsEmpty () = 
+    let memberValues =
         match values with
-        | None
-        | Some [] -> true
-        | _ -> false
+        | None -> []
+        | Some realValues -> realValues
+
+
+    member _.IsEmpty () = 
+        memberValues
+        |> List.isEmpty
 
     member _.contains candidate = 
-        match values with
-        | None
-        | Some [] -> false
-        | Some values ->
-            values
-            |> List.contains candidate
+        memberValues
+        |> List.contains candidate
