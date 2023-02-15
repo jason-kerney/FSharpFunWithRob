@@ -30,3 +30,13 @@ let ``should contain value passed to it`` () =
 [<Test>]
 let ``should not contain a value that is not passed`` () =
     Assert.IsFalse(baseSet.contains "Bob")
+
+[<Test>]
+let ``should throw exception if given null in set`` () =
+    try
+        Set (Some ["Hello"; null; "world"]) |> ignore
+        Assert.Fail "Should not get here if you throw exceptions"
+    with _ ->
+        ()
+    
+

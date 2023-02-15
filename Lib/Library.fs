@@ -4,7 +4,13 @@ type Set (values: (_ list) option) =
     let memberValues =
         match values with
         | None -> []
-        | Some realValues -> realValues
+        | Some realValues -> 
+            if realValues |> List.contains null then
+                "Bad"
+                |> System.ArgumentException 
+                |> raise
+            else
+                realValues
 
 
     member _.IsEmpty () = 
