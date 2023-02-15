@@ -21,3 +21,8 @@ let ``should not be empty if containg strings`` () =
 let ``should be empty if passed an empty list`` () =
     let set = Set (Some [])
     Assert.IsTrue(set.IsEmpty ())
+
+[<Test>]
+let ``should contain value passed to it`` () =
+    let set = Set (Some ["Hello"; "world"])
+    Assert.IsTrue(set.contains("Hello"))
