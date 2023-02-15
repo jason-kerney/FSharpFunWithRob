@@ -942,6 +942,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "SetArithmetic.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FSharp.Core": "6.0.5"
+        },
+        "compile": {
+          "bin/placeholder/SetArithmetic.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SetArithmetic.Lib.dll": {}
+        }
       }
     }
   },
@@ -3969,6 +3982,11 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "SetArithmetic.Lib/1.0.0": {
+      "type": "project",
+      "path": "../Lib/SetArithmetic.Lib.fsproj",
+      "msbuildProject": "../Lib/SetArithmetic.Lib.fsproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3978,6 +3996,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
+      "SetArithmetic.Lib >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -3987,11 +4006,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\SetArithmetic.Tests\\SetArithmetic.Tests.fsproj",
+      "projectUniqueName": "D:\\Development\\FSharpFunWithRob\\Tests\\SetArithmetic.Tests.fsproj",
       "projectName": "SetArithmetic.Tests",
-      "projectPath": "D:\\Development\\SetArithmetic.Tests\\SetArithmetic.Tests.fsproj",
+      "projectPath": "D:\\Development\\FSharpFunWithRob\\Tests\\SetArithmetic.Tests.fsproj",
       "packagesPath": "C:\\Users\\baghe\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\SetArithmetic.Tests\\obj\\",
+      "outputPath": "D:\\Development\\FSharpFunWithRob\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\baghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4009,7 +4028,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj": {
+              "projectPath": "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj"
+            }
+          }
         }
       }
     },

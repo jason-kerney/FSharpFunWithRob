@@ -1,5 +1,4 @@
 ﻿namespace SetArithmetic.Lib
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+type Set () =
+    member _.IsEmpty () = true

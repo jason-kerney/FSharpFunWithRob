@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uVK9pogV6cedVQKBI0kybmLfSBhRDXGc2yMNgklODsRb83wHeDsujvk7pt4lNRwNwZQ2pp0DBgvAbUURqRWo7w==",
+  "dgSpecHash": "G2abA2W/Fpi94MfQHKtXAc6gOPo5PS6h92fLWMvZAcc40QNFj/9m44hCbxaD1nR0j/mYIWcCKrv23+Q9Wz2opg==",
   "success": true,
-  "projectFilePath": "D:\\Development\\SetArithmetic.Lib\\SetArithmetic.Lib.fsproj",
+  "projectFilePath": "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\baghe\\.nuget\\packages\\fsharp.core\\6.0.5\\fsharp.core.6.0.5.nupkg.sha512"
   ],

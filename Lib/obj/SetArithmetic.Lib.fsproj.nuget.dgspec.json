@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Development\\SetArithmetic.Lib\\SetArithmetic.Lib.fsproj": {}
+    "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj": {}
   },
   "projects": {
-    "D:\\Development\\SetArithmetic.Lib\\SetArithmetic.Lib.fsproj": {
+    "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development\\SetArithmetic.Lib\\SetArithmetic.Lib.fsproj",
+        "projectUniqueName": "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj",
         "projectName": "SetArithmetic.Lib",
-        "projectPath": "D:\\Development\\SetArithmetic.Lib\\SetArithmetic.Lib.fsproj",
+        "projectPath": "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj",
         "packagesPath": "C:\\Users\\baghe\\.nuget\\packages\\",
-        "outputPath": "D:\\Development\\SetArithmetic.Lib\\obj\\",
+        "outputPath": "D:\\Development\\FSharpFunWithRob\\Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\baghe\\AppData\\Roaming\\NuGet\\NuGet.Config",

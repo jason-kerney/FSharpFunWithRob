@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Development\\SetArithmetic.Tests\\SetArithmetic.Tests.fsproj": {}
+    "D:\\Development\\FSharpFunWithRob\\Tests\\SetArithmetic.Tests.fsproj": {}
   },
   "projects": {
-    "D:\\Development\\SetArithmetic.Tests\\SetArithmetic.Tests.fsproj": {
+    "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development\\SetArithmetic.Tests\\SetArithmetic.Tests.fsproj",
-        "projectName": "SetArithmetic.Tests",
-        "projectPath": "D:\\Development\\SetArithmetic.Tests\\SetArithmetic.Tests.fsproj",
+        "projectUniqueName": "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj",
+        "projectName": "SetArithmetic.Lib",
+        "projectPath": "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj",
         "packagesPath": "C:\\Users\\baghe\\.nuget\\packages\\",
-        "outputPath": "D:\\Development\\SetArithmetic.Tests\\obj\\",
+        "outputPath": "D:\\Development\\FSharpFunWithRob\\Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\baghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -30,6 +30,69 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[6.0.5, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FSharpFunWithRob\\Tests\\SetArithmetic.Tests.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FSharpFunWithRob\\Tests\\SetArithmetic.Tests.fsproj",
+        "projectName": "SetArithmetic.Tests",
+        "projectPath": "D:\\Development\\FSharpFunWithRob\\Tests\\SetArithmetic.Tests.fsproj",
+        "packagesPath": "C:\\Users\\baghe\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FSharpFunWithRob\\Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\baghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Nuget.Local": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\6.0.308\\FSharp\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj": {
+                "projectPath": "D:\\Development\\FSharpFunWithRob\\Lib\\SetArithmetic.Lib.fsproj"
+              }
+            }
           }
         }
       },
