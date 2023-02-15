@@ -3,6 +3,8 @@ module SetArithmetic.Tests.``Create a set``
 open NUnit.Framework
 open SetArithmetic.Lib
 
+let baseSet = Set (Some ["Hello"; "world"])
+
 [<SetUp>]
 let Setup () =
     ()
@@ -14,8 +16,7 @@ let ``should create an empty set`` () =
 
 [<Test>]
 let ``should not be empty if containg strings`` () =
-    let set = Set (Some ["Hello"; "World"])
-    Assert.IsFalse(set.IsEmpty ())
+    Assert.IsFalse(baseSet.IsEmpty ())
 
 [<Test>]
 let ``should be empty if passed an empty list`` () =
@@ -24,10 +25,8 @@ let ``should be empty if passed an empty list`` () =
 
 [<Test>]
 let ``should contain value passed to it`` () =
-    let set = Set (Some ["Hello"; "world"])
-    Assert.IsTrue(set.contains "Hello")
+    Assert.IsTrue(baseSet.contains "Hello")
 
 [<Test>]
 let ``should not contain a value that is not passed`` () =
-    let set = Set (Some ["Hello"; "world"])
-    Assert.IsFalse(set.contains "Bob")
+    Assert.IsFalse(baseSet.contains "Bob")
