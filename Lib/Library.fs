@@ -1,4 +1,4 @@
 ﻿namespace SetArithmetic.Lib
 
-type Set () =
-    member _.IsEmpty () = true
+type Set (values: (string list) option) =
+    member _.IsEmpty () = values.IsNone
