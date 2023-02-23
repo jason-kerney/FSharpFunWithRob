@@ -5,13 +5,12 @@ type Set (values: (_ list) option) =
         match values with
         | None -> []
         | Some realValues -> 
-            if realValues |> List.contains null then
+            if realValues |> List.contains null || realValues |> List.contains "" then
                 "Bad"
                 |> System.ArgumentException 
                 |> raise
             else
                 realValues
-
 
     member _.IsEmpty () = 
         memberValues
