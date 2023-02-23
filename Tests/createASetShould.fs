@@ -45,4 +45,4 @@ let ``should throw exception if given empty string in set`` () =
         Set (Some ["Hello"; ""; "world"]) |> ignore
         Assert.Fail "Should not get here if you throw exceptions"
     with _ ->
-        ()    
+        ()
